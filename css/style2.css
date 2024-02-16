@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("back_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:sans-serif;
+    font-size: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    position:absolute;
+    top: -50px;
+    left:calc(50% - 50px)
+}
+
+input[type=email],input[type=password]  
+{
+    border:none;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    /*border-right:3px solid rgb(0, 0, 0) ;*/
+    padding:2%;
+    width:85%;
+    background-color: rgba(255, 255, 255, 0.286);
+}
+i {
+    position: relative;
+    right:5px;
+    top:5px;
+    color:white;
+}
+
+.back {
+    background-color:rgba(0, 0, 0, 0.268);
+    border-radius: 10px;
+    width:340px;
+    height:440px;
+    color:white;
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}
+.back label {
+    font-weight: bold;
+}
+
+.back a {
+    font-size: 15px;
+    font-family: Georgia;
+    color:rgb(254, 204, 2);
+}
+
+input[type=submit] {
+    width:100%;
+    padding:7px;
+    margin-top: 20px;
+    border-radius:20px;
+    background-color:#59B4C3;
+    font-size:15px;
+    border:0;
+}
+
+
+.nubody {
+    margin:0;
+    padding: 0;
+    background-image: url("nubackimg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.block {
+    background-color:rgba(0, 0, 0, 0.268);
+    width:500px;
+    height:400px;
+    color:white;
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%,-50%);    
+    box-sizing: border-box;
+    padding:30px;
+}
+.heading {
+    border:2px solid rgb(113, 49, 169);
+    background-color:rgb(152, 89, 208);
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    margin-left:44%;
+    margin-top:7%;
+}
+
+.fpbody {
+    margin:0;
+    padding: 0;
+    background-image: url("fpbackimg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.block1 {
+    background-color:rgba(0, 0, 0, 0.268);
+    width:600px;
+    height:400px;
+    color:white;
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%,-50%);    
+    box-sizing: border-box;
+    padding:30px;
+}
+.login_head {
+    text-align: center;
+    color: white;
+}

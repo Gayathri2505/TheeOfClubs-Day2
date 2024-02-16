@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Event Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        select,
+        input[type="date"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Edit Events</h2>
+        <form action="../api/process_form.php" method="POST">
+            <label for="club_name">Name of Club:</label>
+            <input type="text" id="club_name" name="club_name" required>
+            
+            <label for="event_name">Name of Event:</label>
+            <input type="text" id="event_name" name="event_name" required>
+
+            <label for="event_action">Event Action:</label>
+            <select id="event_action" name="event_action">
+                <option value="add" name="event_action">Add</option>
+                <option value="delete" name="event_action">Delete</option>
+                <option value="update" name="event_action">Update</option>
+            </select>
+            
+            <label for="event_date">Event Date:</label>
+            <input type="date" id="event_date" name="event_date" required>
+
+            
+            
+            <input type="submit" value="Submit" formaction="../api/process_form.php">
+        </form>
+    </div>
+</body>
+</html>

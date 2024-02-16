@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+    
+<div class="login_head">
+    <h1>Administrator Login</h1>
+</div>
+<div class="back">
+    <img src="../uploads/login.jpg" alt="pic" class="avatar">
+    <h2 style="text-align: center;">Login Here</h2>
+    <form action="../api/login.php" method="post">
+        <label for="mail">Username:</label><br>
+        <input type="email" id="mail" name="mail" placeholder="Enter UserName">
+        <i class='bx bx-user'></i><br><br>
+        <label for="pswd">Password: </label><br>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+        <i class='bx bx-lock-alt'></i><br>
+        <center>
+            <input type="submit" value="Login" onclick="login()">
+        </center>
+    </form>
+    <br>
+    <a href="forget_pswd.html" title="new password" target="_blank">Forget Password ?</a><br>
+</div>
+
+</body>
+</html>
